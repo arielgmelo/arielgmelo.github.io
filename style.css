@@ -18,10 +18,10 @@ body {
 main#principal {
     position: absolute;
     background-color: #ffffff;
-    box-shadow: 3px 5px 50px rgba(0, 0, 0, 0.37);
+    box-shadow: 10px 10px 35px #302c3891;
     border-radius: 15px;
-    min-width: 350px;
-    max-width: 450px;
+    min-width: 300px;
+    max-width: 300px;
     padding: 40px;
     top: 50%;
     left: 50%;
@@ -34,6 +34,7 @@ main#principal {
 main#principal > h1 {
     text-align: center;
     margin: 20px 0px;
+    font-weight: normal;
 }
 
 p {
@@ -56,4 +57,5 @@ li {
     border-radius: 10px;
     margin: 10px 0px;
     vertical-align: middle;
+    text-decoration: none;
 }

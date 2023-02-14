@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 * {
-    margin: 0pc;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -10,12 +10,17 @@ body {
     position: relative;
     height: 100vh;
     background-image: url(imagens/background-g.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
 }
 
-main#principal {
+body > main > a {
+    transition-duration: .3s;
+}
+
+#container {
     position: absolute;
     background-color: #ffffff95;
     backdrop-filter: blur(15px);
@@ -32,25 +37,7 @@ main#principal {
     
 }
 
-main#principal > h1 {
-    text-align: center;
-    margin: 20px 0px;
-    font-weight: normal;
-}
-
-p {
-    text-align: center;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-p#email {
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: normal;
-}
-
-div#profileimg {
+#img-container {
     margin: auto;
     height: 100px;
     width: 100px;
@@ -59,11 +46,43 @@ div#profileimg {
     background-size: cover;
 }
 
-li {
-    height: 40px;
-    border: 2px solid black;
-    border-radius: 10px;
+#container > h1 {
+    text-align: center;
+    margin: 20px 0px;
+    font-weight: normal;
+}
+
+.activities {
+    text-align: center;
+    font-size: 18px;
+}
+
+.email {
+    text-align: center;
     margin: 10px 0px;
-    vertical-align: middle;
+}
+
+.title{
+    display: block;
+    background-color: #bcb2d5;
+    color: #76669b;
+    padding: 15px;
+    width: 90%;
+    margin: 5px auto;
+    border-radius: 10px;
     text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.title:hover {
+    background-color: #9488ae;
+    color: #d8cee7;
+    padding: 20px 15px;
+}
+
+.title:target {
+    background-color: #9488ae;
+    color: #d8cee7;
 }

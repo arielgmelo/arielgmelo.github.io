@@ -17,7 +17,8 @@ body {
 
 main#principal {
     position: absolute;
-    background-color: #ffffff;
+    background-color: #ffffff95;
+    backdrop-filter: blur(15px);
     box-shadow: 10px 10px 35px #302c3891;
     border-radius: 15px;
     min-width: 300px;
@@ -27,7 +28,7 @@ main#principal {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: Arial, Helvetica, sans-serif;
-    color: #9488ae;
+    color: #9388ad;
     
 }
 
@@ -39,7 +40,14 @@ main#principal > h1 {
 
 p {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+p#email {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: normal;
 }
 
 div#profileimg {

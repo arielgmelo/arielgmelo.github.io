@@ -22,7 +22,7 @@ body > main > a {
 
 #container {
     position: absolute;
-    background-color: #ffffff95;
+    background-color: #ffffff75;
     backdrop-filter: blur(15px);
     box-shadow: 10px 10px 35px #302c3891;
     border-radius: 15px;

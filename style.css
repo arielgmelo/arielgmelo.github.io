@@ -8,18 +8,23 @@
 }
 
 body {
-    background-color: #8f8e8e;
-    position: relative;
     height: 100vh;
-    background-image: url(imagens/background-g.jpg);
+    position: relative;
+    background-color: #8f8e8e;
+    background-image: url(imagens/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
 }
 
-body > main > a {
-    transition-duration: .3s;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 #container {
@@ -35,6 +40,9 @@ body > main > a {
     transform: translate(-50%, -50%);
     font-family: 'Public Sans', Arial, Helvetica, sans-serif;
     color: #9388ad;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
     
 }
 
@@ -47,7 +55,7 @@ body > main > a {
     background-size: cover;
 }
 
-#container > h1 {
+.name {
     text-align: center;
     margin: 20px 0px;
     font-weight: normal;
@@ -56,7 +64,7 @@ body > main > a {
 .activities {
     text-align: center;
     font-size: 1em;
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
@@ -74,7 +82,7 @@ body > main > a {
 
 .buttons {
     display: block;
-    background-color: #bcb2d5;
+    background-color: #E3E0E9;
     line-height: 50px;
     width: 100%;
     height: 50px;
@@ -85,9 +93,9 @@ body > main > a {
 .title {
     color: #76669b;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: bold;
-    font-size: 0.9em;
+    font-size: 0.8em;
     padding-left: 25px;
 }
 
@@ -98,6 +106,6 @@ body > main > a {
 }
 
 .title:hover {
-    color: #d8cee7;
+    color: #E3E0E9;
     transition-duration: 0.3s;
 }

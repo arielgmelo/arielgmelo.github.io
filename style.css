@@ -22,7 +22,7 @@ body > main > a {
 
 #container {
     position: absolute;
-    background-color: #ffffff75;
+    background-color: #ffffff;
     backdrop-filter: blur(15px);
     box-shadow: 10px 10px 35px #302c3891;
     border-radius: 15px;
@@ -85,4 +85,10 @@ body > main > a {
 .title:target {
     background-color: #9488ae;
     color: #d8cee7;
+}
+
+.icons {
+    height: 30px;
+    fill: #76669b;
+
 }

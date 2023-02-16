@@ -55,7 +55,7 @@ body > main > a {
 
 .activities {
     text-align: center;
-    font-size: 14px;
+    font-size: 1em;
     font-weight: bold;
     margin-bottom: 5px;
 }
@@ -72,7 +72,8 @@ body > main > a {
     gap: 5px;
 }
 
-.title {display: block;
+.buttons {
+    display: block;
     background-color: #bcb2d5;
     line-height: 50px;
     width: 100%;
@@ -81,7 +82,7 @@ body > main > a {
     text-decoration: none;
 }
 
-.label {
+.title {
     color: #76669b;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -90,12 +91,13 @@ body > main > a {
     padding-left: 25px;
 }
 
-.title:hover {
+.buttons:hover {
     background-color: #9488ae;
     transform: scale(1.05);
     transition-duration: 0.3s;
 }
 
-.label:hover {
+.title:hover {
     color: #d8cee7;
+    transition-duration: 0.3s;
 }

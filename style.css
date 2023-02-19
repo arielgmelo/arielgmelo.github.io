@@ -76,13 +76,13 @@ body {
 
 .contact {
     text-align: center;
-    padding-bottom: 20px;
 }
 
 .list {
     display: flex;
     gap: 5px;
     flex-direction: column;
+    margin-top: 20px;
     list-style: none;
 }
 

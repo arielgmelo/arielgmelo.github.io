@@ -1,0 +1,6 @@
+mudar toda a estrutura da main para uma:
+div no lugar de body
+div no lugar de main
+uma div envolvendo a mais pra ser usana pra reposicionar
+colocar tudo em flex
+e usar os atributos dos prints tirados

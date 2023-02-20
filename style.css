@@ -7,15 +7,23 @@
     padding: 0px;
 }
 
-@-webkit-keyframes ZoomIn {
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.7);
+    }
+
     100% {
-        -webkit-transform: scale(1,1); 
+        transform: scale(1); 
     }
 }
 
-@keyframes ZoomIn {
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
     100% {
-        transform: scale(1,1); 
+        opacity: 1;
     }
 }
 
@@ -41,12 +49,7 @@ body {
     padding: 30px;
     color: #9388ad;
     font-family: 'Public Sans', Arial, Helvetica, sans-serif;
-    animation: ZoomIn .5s;
-    transform: scale(0.75,0.75);
-    animation-fill-mode: forwards;
-    -webkit-animation: ZoomIn .5s;
-    -webkit-transform: scale(0.75,0.75);
-    -webkit-animation-fill-mode: forwards;
+    animation: zoomIn .5s forwards, fadeIn .5s forwards;
 } 
 
 .img-container {

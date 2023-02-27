@@ -5,6 +5,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    transition-duration: 0.3s;
 }
 
 @keyframes zoomIn {
@@ -115,6 +116,7 @@
     line-height: 50px;
     max-width: 300px;
     height: 50px;
+    padding: 0px 25px;
     border-radius: 10px;
     text-decoration: none;
 }
@@ -125,17 +127,25 @@
     letter-spacing: 3px;
     font-weight: bold;
     font-size: 0.8em;
-    width: 100%;
-    padding-left: 25px;
+    width: 90%;
+}
+
+.icons {
+    fill: #76669b;
+    width:10%;
+    height: 50px;
 }
 
 .buttons:hover {
     background-color: #9488ae;
     transform: scale(1.05);
-    transition-duration: 0.3s;
 }
 
-.title:hover {
+.buttons:hover .title {
     color: #E3E0E9;
-    transition-duration: 0.3s;
+}
+
+.buttons:hover .icons{
+    fill: #E3E0E9;
+    transition-duration: 0.03s;
 }

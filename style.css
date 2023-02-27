@@ -134,6 +134,7 @@
     fill: #76669b;
     width:10%;
     height: 50px;
+    transition-duration: 0.05s;
 }
 
 .buttons:hover {
@@ -147,6 +148,7 @@
 
 .buttons:hover .icons{
     fill: #E3E0E9;
+    transition-duration: 0.05s;
 }
 
 .hidden {

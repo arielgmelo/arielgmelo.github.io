@@ -148,3 +148,7 @@
 .buttons:hover .icons{
     fill: #E3E0E9;
 }
+
+.hidden {
+    display: none;
+}

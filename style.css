@@ -8,12 +8,17 @@
     transition-duration: 0.3s;
 }
 
+::selection {
+    background: #9488ae;
+    color: #FFFFFF;
+}
+
 :root {
     --text-clr: #9388ad;
     --accent-clr: #9488ae;
     --buttons-bg-clr: #E3E0E9;
     --hover-accent-clr: #E3E0E9;
-    --hover-buttons-bg-color: #9488ae;
+    --hover-buttons-bg-clr: #9488ae;
 }
 
 @keyframes zoomIn {
@@ -109,6 +114,16 @@
 .contact {
     color: var(--text-clr);
     text-align: center;
+    text-decoration: none;
+    transition-duration: 0.05s;
+}
+
+.contact:hover {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: var(--accent-clr);
+    color: #FFFFFF;
+    transition-duration: 0.05s;
 }
 
 .list {
@@ -147,7 +162,7 @@
 }
 
 .buttons:hover {
-    background-color: var(--hover-buttons-bg-color);
+    background-color: var(--hover-buttons-bg-clr);
     transform: scale(1.05);
 }
 

@@ -9,7 +9,7 @@
 }
 
 ::selection {
-    background: #9488ae;
+    background: var(--accent-clr);
     color: #FFFFFF;
 }
 

@@ -14,11 +14,11 @@
 }
 
 :root {
-    --text-clr: #9388ad;
-    --accent-clr: #9488ae;
-    --buttons-bg-clr: #E3E0E9;
-    --hover-accent-clr: #E3E0E9;
-    --hover-buttons-bg-clr: #9488ae;
+    --text-clr: #363f34;
+    --accent-clr: #363f34;
+    --buttons-bg-clr: #a5be9e;
+    --hover-accent-clr: #a5be9e;
+    --hover-buttons-bg-clr: #363f34;
 }
 
 @keyframes zoomIn {
@@ -65,8 +65,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #bcb2d5;
-    background-image: url(imagens/background.jpg);
+    background-image: url(imagens/background.svg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;

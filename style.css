@@ -105,7 +105,7 @@
 .activities {
     color: var(--text-clr);
     text-align: center;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 14px;
     font-weight: 500;
 }

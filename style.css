@@ -59,6 +59,12 @@
     }
 }
 
+/** @keyframes linearGradientMove {
+    100% {
+        background-position: 4px 0, -4px 100%, 0 -4px, 100% 4px;
+    }
+} **/
+
 #background {
     min-height: 100vh;
     display: flex;
@@ -133,6 +139,7 @@
     border-radius: 10px;
     border-style: dashed;
     border-color: #415345;
+    /** animation: linearGradientMove .3s infinite linear; **/
     
 } 
 

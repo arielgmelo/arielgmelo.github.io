@@ -9,16 +9,19 @@
 }
 
 ::selection {
-    background: var(--accent-clr);
+    background: var(--main-accent-clr);
     color: #FFFFFF;
 }
 
 :root {
-    --text-clr: #415345;
-    --accent-clr: #415345;
-    --buttons-bg-clr: #a6bda5;
-    --hover-accent-clr: #a6bda5;
+    --main-text-clr: #415345;
+    --sec-text-clr: #a6bda5;
+    --third-accent-clr: #5d7963;
+    --main-accent-clr: #415345;
+    --sec-accent-clr: #a6bda5;
+    --buttons-bg-clr: #5d7963;
     --hover-buttons-bg-clr: #415345;
+    background-color: var(--third-accent-clr);
 }
 
 @keyframes zoomIn {
@@ -74,9 +77,14 @@
 }
 
 #container {
-    background-color: #ffffff;
+    background-color: #ffffff75;
+    backdrop-filter: blur(20px);
     border-radius: 25px;
-    box-shadow: 10px 10px 35px #00000065;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff60;
+    outline: 1px solid #00000040;
+    box-shadow: 10px 10px 35px #0b0b0b95;
     max-width: 300px;
     min-width: 250px;
     padding: 30px;
@@ -96,14 +104,14 @@
 }
 
 .name {
-    color: var(--text-clr);
+    color: var(--main-text-clr);
     font-weight: normal;
     text-align: center;
     padding: 10px 0px;
 }
 
 .activities {
-    color: var(--text-clr);
+    color: var(--main-text-clr);
     text-align: center;
     padding-bottom: 10px;
     font-size: 16px;
@@ -111,18 +119,18 @@
 }
 
 .contact {
-    color: var(--text-clr);
+    color: var(--main-text-clr);
     text-align: center;
     text-decoration: none;
-    transition-duration: 0.05s;
     font-size: 14px;
+    transition-duration: 0.05s;
 }
 
 .contact:hover {
     display: inline-block;
     color: #FFFFFF;
     width: 100%;
-    background-color: var(--accent-clr);
+    background-color: var(--main-accent-clr);
     border-radius: 10px;
     transition-duration: 0.05s;
 }
@@ -152,36 +160,31 @@
     padding: 0px 25px;
     border-radius: 10px;
     text-decoration: none;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #8fa594ca;
+    outline: 1px solid #00000090;
 }
 
 .title {
-    color: var(--accent-clr);
+    color: var(--sec-text-clr);
     text-transform: uppercase;
     letter-spacing: 3px;
     font-weight: bold;
-    font-size: 0.8em;
+    font-size: 12px;
     width: 90%;
 }
 
 .icons {
-    fill: var(--accent-clr);
+    fill: var(--sec-accent-clr);
     width:10%;
     height: 50px;
-    transition-duration: 0.05s;
 }
 
 .buttons:hover {
     background-color: var(--hover-buttons-bg-clr);
+    border-color: #8aae9295;
     transform: scale(1.05);
-}
-
-.buttons:hover .title {
-    color: var(--hover-accent-clr);
-}
-
-.buttons:hover .icons{
-    fill: var(--hover-accent-clr);
-    transition-duration: 0.05s;
 }
 
 .hidden {
